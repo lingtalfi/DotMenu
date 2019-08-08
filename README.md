@@ -57,6 +57,11 @@ $array = [
             ],
         ],
     ],
+    "uni.verse" => [
+        "id" => "uni.verse",
+        "children" => [],
+
+    ],
 ];
 
 
@@ -80,6 +85,11 @@ $dot->appendItem([
     "children" => [],
 ], "three.four");
 
+$dot->appendItem([
+    "id" => "eight",
+    "children" => [],
+], "uni\.verse");
+
 
 a($dot->getItems());
 
@@ -90,7 +100,7 @@ Will output:
 
 ```html
 
-array(3) {
+array(4) {
   ["one"] => array(2) {
     ["id"] => string(3) "one"
     ["children"] => array(0) {
@@ -126,7 +136,18 @@ array(3) {
       }
     }
   }
+  ["uni.verse"] => array(2) {
+    ["id"] => string(9) "uni.verse"
+    ["children"] => array(1) {
+      ["eight"] => array(2) {
+        ["id"] => string(5) "eight"
+        ["children"] => array(0) {
+        }
+      }
+    }
+  }
 }
+
 
 ```
 
@@ -139,6 +160,10 @@ array(3) {
 History Log
 =============
 
+- 1.0.1 -- 2019-08-08
+
+    - update readme.md
+    
 - 1.0.0 -- 2019-08-08
 
     - initial commit
