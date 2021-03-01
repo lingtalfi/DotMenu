@@ -1,6 +1,6 @@
 DotMenu
 ===========
-2019-08-08
+2019-08-08 -> 2021-03-01
 
 
 
@@ -160,9 +160,13 @@ array(4) {
 History Log
 =============
 
+- 1.0.4 -- 2021-03-01
+
+    - update DotMenu->appendItem, now throws exception if the item doesn't contain the idKey
+  
 - 1.0.3 -- 2020-12-08
 
-    - Fix lpi-deps not using natsort.
+    - Fix lpi-deps not using natsort
 
 - 1.0.2 -- 2020-12-04
 
